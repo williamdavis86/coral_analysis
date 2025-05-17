@@ -5,7 +5,7 @@ def fetch_coral_data(limit=10000, save_csv=True):
     url = "https://api.obis.org/v3/occurrence"
     params = {
         "scientificname": "Scleractinia", # most modern coral reefs are scleractinian
-        "size": limit
+        "size": limit # limit the number of records returned (csv is approx 10MB with this set to 10000)
     }
 
     print("getting coral data from OBIS API")
