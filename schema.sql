@@ -11,7 +11,7 @@ CREATE TABLE species (
     genus TEXT
 );
 
-drop table if exits locations;
+drop table if exists locations;
 CREATE TABLE locations (
     location_id INTEGER PRIMARY KEY AUTOINCREMENT,
     decimal_latitude REAL,
