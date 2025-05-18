@@ -9,7 +9,7 @@ which is the type of coral that makes up most modern reef systems.
 To ingest the data, I used the `requests` library to make a request to the OBIS API. 
 The data is returned in JSON format, which I then converted into a pandas DataFrame. This is done in `ingest_data.py`.
 
-Then, I put the data into a sqlite database using the `sqlite3` library in `fill_sql_tables.py`.
+Then, I put the data into a sqlite database using the `sqlite3` library in `fill_sql_tables.py`. The SQL schema code can be found in `schema.sql`.
 
 For the analysis, I answered three questions with SQL only and two question in Python/SQL. The questions I answered with SQL are 
 "Where are corals most often seen?", "What are the most commonly observed corals?", and "What corals are commonly at a depth suitable for snorkeling?".
