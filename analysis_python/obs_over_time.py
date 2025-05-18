@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # connect to sqlite
-conn = sqlite3.connect("../coral.sqlite")
+conn = sqlite3.connect("./coral.sqlite")
 
 # grab event_date from occurrences table
 df = pd.read_sql("""
@@ -25,6 +25,6 @@ plt.xlabel('Year')
 plt.ylabel('Number of Observations')
 plt.grid(True)
 plt.tight_layout()
-plt.show()
+plt.savefig("analysis_python/obs_over_time.png")
 
 conn.close()

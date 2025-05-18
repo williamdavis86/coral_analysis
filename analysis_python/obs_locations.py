@@ -2,7 +2,7 @@ import sqlite3
 import pandas as pd
 import matplotlib.pyplot as plt
 
-conn = sqlite3.connect("../coral.sqlite")
+conn = sqlite3.connect("./coral.sqlite")
 
 df = pd.read_sql("""
     select l.decimal_latitude as lat, l.decimal_longitude as lon
@@ -17,4 +17,4 @@ plt.xlabel('Longitude')
 plt.ylabel('Latitude')
 plt.title('Coral Observation Density Map')
 plt.tight_layout()
-plt.show()
+plt.savefig("analysis_python/obs_locations.png")
