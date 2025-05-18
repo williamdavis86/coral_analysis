@@ -23,7 +23,7 @@ The resulting figures can be seen in `analysis_python/obs_over_time.png` and `an
 ## Running the Code
 
 The code was written in Python 3.12. To run the code, make sure you have the required packages from `requirements.txt` installed. 
-I recommend using a miniconda environment to manage the packages.\ 
-\
+I recommend using a miniconda environment to manage the packages.
+
 Once you have the required packages, you can run `python run_all.py` to ingest the data, fill the tables, and run the analyses.
 The results of the analyses are in the md and png files mentioned above.
